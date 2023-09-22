@@ -1,8 +1,36 @@
 /* ==========================================================================
-   Top Comment
+   Body Container
 ========================================================================== */
 
-/* Sub Comment
+.body-container {
+   display: grid;
+   grid-template-rows: 3fr 15fr 2fr;
+   grid-template-columns: 1fr;
+   height: 100vh;
+}
+
+/* ==========================================================================
+   Header Container
 ========================================================================== */
+
+.header-container {
+   display: grid;
+   grid-template-rows: 1fr;
+   grid-template-columns: repeat(2, 1fr);
+   height: 100%;
+}
+
+#title {
+   place-self: center;
+}
+
+/* Navigation Container
+========================================================================== */
+
+.nav-container {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
 
 /* Regular Comment */
