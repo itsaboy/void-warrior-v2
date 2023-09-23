@@ -33,4 +33,104 @@
    align-items: center;
 }
 
+/* ==========================================================================
+   Main Containers
+========================================================================== */
+
+.download-container {
+   display: grid;
+   grid-template-areas:
+   "download-section1 download-section2"
+   "download-section1 download-section3";
+   grid-template-rows: repeat(2, 1fr);
+   grid-template-columns: repeat(2, 1fr);
+   height: 100%;
+   width: 75%;
+   margin: 0 auto;
+   gap: 3rem;
+}
+
+#download-section1 {
+   grid-area: download-section1;
+}
+
+#download-section2 {
+   grid-area: download-section2;
+}
+
+#download-section3 {
+   grid-area: download-section3;
+}
+
+/* ==========================================================================
+   Download Sub Containers
+========================================================================== */
+
+.slideshow-container {
+   display: grid;
+   place-items: center;
+   height: 100%;
+}
+
+.newest-container {
+   display: grid;
+   grid-template-areas:
+   "newest-heading newest-heading"
+   "newest-logo newest-link";
+   grid-template-rows: repeat(2, 1fr);
+   grid-template-columns: repeat(2, 1fr);
+   height: 100%;
+   place-items: center;
+}
+
+#newest-heading {
+   grid-area: newest-heading;
+}
+
+#newest-logo {
+   grid-area: newest-logo;
+}
+
+#newest-link {
+   grid-area: newest-link;
+}
+
+.previous-container {
+   display: grid;
+   grid-template-areas:
+   "previous-heading previous-heading"
+   "previous-logo old-link1"
+   "previous-logo old-link2";
+   grid-template-rows: repeat(3, 1fr);
+   grid-template-columns: repeat(2, 1fr);
+   height: 100%;
+   place-items: center;
+}
+
+#previous-heading {
+   grid-area: previous-heading;
+}
+
+#previous-logo {
+   grid-area: previous-logo;
+}
+
+#old-link1 {
+   grid-area: old-link1;
+}
+
+#old-link2 {
+   grid-area: old-link2;
+}
+
+/* ==========================================================================
+   Footer Container
+========================================================================== */
+
+.footer-container {
+   display: grid;
+   place-items: center;
+   height: 100%;
+}
+
 /* Regular Comment */
